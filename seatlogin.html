@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | Exam Hall Seat Generation</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(img4.jpg); /* Replace with your image path */
+            background-size: cover;
+        }
+
+        .login-container {
+            width: 300px;
+            height: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px; 
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            height: 200%;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            height: 200%;
+        }
+
+        .login-container input[type="button"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+    <script>
+        function redirectToTable() {
+            // Redirect to the exam hall seat arrangement page
+            window.location.href = 'seat_arrangement.html'; // Update with your actual file name
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="submit_login.php" method="post" onsubmit="event.preventDefault(); redirectToTable();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <input type="button" value="Login" onclick="redirectToTable()">
+        </form>
+    </div>
+
+</body>
+</html>

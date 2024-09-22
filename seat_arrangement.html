@@ -1,0 +1,73 @@
+<html>
+    <body>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            background-image: url(img4.jpg); /* Replace with your image path */
+            background-size: cover;
+        }
+            table {
+                width: 60%;
+                height: 60%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 15px;
+                text-align: center;
+            }
+
+            td {
+                background-color: lightcoral;
+            }
+
+            .empty-seat {
+                background-color: lavender;
+            }
+        </style>
+        <h2 style="text-align:center">Exam Hall Seat Arrangement</h2>
+
+        <table>
+            <tr>
+                <th style="background-color: lightblue;">Row/Column</th>
+                <th style="background-color: lightblue;">Seat 1</th>
+                <th style="background-color: lightblue;">Seat 2</th>
+                <th style="background-color: lightblue;">Seat 3</th>
+                <th style="background-color: lightblue;">Seat 4</th>
+            </tr>
+            <tr>
+                <th style="background-color: lightblue;">Row A</th>
+                <td>1A</td>
+                <td>2A</td>
+                <td class="empty-seat">Empty</td>
+                <td>4A</td>
+            </tr>
+            <tr>
+                <th style="background-color: lightblue;">Row B</th>
+                <td>1B</td>
+                <td>2B</td>
+                <td>3B</td>
+                <td>4B</td>
+            </tr>
+            <tr>
+                <th style="background-color: lightblue;">Row C</th>
+                <td>1C</td>
+                <td class="empty-seat">Empty</td>
+                <td>3C</td>
+                <td>4C</td>
+            </tr>
+            <tr>
+                <th style="background-color: lightblue;">Row D</th>
+                <td>1D</td>
+                <td>2D</td>
+                <td>3D</td>
+                <td>4D</td>
+            </tr>
+        </table>
+    </body>
+</html>
